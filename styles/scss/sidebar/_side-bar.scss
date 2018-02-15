@@ -1,0 +1,74 @@
+@import 'hamburger';
+
+.side-bar {
+    height: 100%; /* 100% Full-height */
+    width: 50px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: $accent-color; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    font-family: $main-font;
+    transition: 0.5s;
+}
+
+.side-bar-expand {
+    width: 250px;
+}
+
+.side-bar-menu {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 50px;
+    overflow-x: hidden;
+    width: 200px;
+    padding-top: 75px;
+    font-size: 1.3em;
+    transition: 0.5s;
+    display: none;
+}
+.side-bar-menu-expand {
+    display: block;
+}
+
+.side-bar-menu li {
+    margin-bottom: 28px;
+    display: none;
+}
+
+.menu-links {
+    width: 50px;
+    margin: auto 0;
+    text-align: center;
+}
+
+.menu-link {
+    font-size: 1.3em;
+}
+
+a.menu-link-text {
+    text-decoration: none;
+    margin: 10px;
+    color: $base-color;
+    transition: 0.2;
+}
+
+a>svg:hover {
+    color: $main-color;
+}
+
+a.menu-link-text:hover {
+    color: $main-color;
+}
+
+a>svg:active {
+    color: $main-color;
+}
+
+svg {
+    color: $base-color;
+    margin-bottom: 30px;
+}

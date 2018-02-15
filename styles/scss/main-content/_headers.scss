@@ -1,0 +1,99 @@
+.goal-header {
+    @extend %header;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    position: relative;
+    float: right;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.goal-header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border-width: 22.5px;
+    border-style:solid;
+    border-color: $main-color;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+}
+
+.goal-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 0;
+    width: 0;
+    border-width: 22.5px;
+    border-style:solid;
+    border-color: $main-color;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-right-color:transparent;
+}
+
+.my-data-header {
+    @extend %header;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.my-data-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 0;
+    width: 0;
+    border-width: 22.5px;
+    border-style:solid;
+    border-color: $main-color;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-right-color:transparent;
+}
+
+.my-data-header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border-width: 22.5px;
+    border-style:solid;
+    border-color: $main-color;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+}
+
+@media screen and (max-width: 767px) {
+    .goal-header {
+        font-size: 1.2em;
+    }
+    .goal-header:before, .goal-header:after, .my-data-header:before, .my-data-header:after {
+        border-width: 20.8px;
+    }
+    .my-data-header {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .goal-header {
+        font-size: 1.2em;
+    }
+    .my-data-header {
+        margin-left: 0;
+        width: 70%;
+        font-size: 1.2em;
+    }
+}

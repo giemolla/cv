@@ -1,0 +1,31 @@
+$main-color: #c0dfd9;
+$accent-color: #3b3a36;
+$base-color: #e9ece5;
+$odd-color: #b3c2bf;
+$main-font: 'Open Sans', sans-serif;
+$serif-font: 'Roboto Slab', serif;
+
+%shadow {
+    -webkit-box-shadow: 0px 8px 24px 1px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 8px 24px 1px rgba(0,0,0,0.62);
+    box-shadow: 0px 8px 24px 1px rgba(0,0,0,0.62);
+}
+
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%fullheight {
+    height: 100%;
+}
+
+%header {
+    font-family: $serif-font;
+    background-color: $main-color;
+    width: 50%;
+    padding: 10px;
+    font-size: 1.4em;
+}

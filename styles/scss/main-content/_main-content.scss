@@ -1,0 +1,74 @@
+@import 'headers';
+@import 'main-info';
+@import 'lists';
+
+.main-content {
+    @extend %shadow;
+    display: block;   
+    transition: 0.5s;
+    width: 100%;
+    text-align: center;
+    min-height: 100%;
+    background-color: $base-color;
+    margin: 6% 25px 6% 50px;
+}
+
+.scooched {
+    opacity: 0.4;
+    margin-left: 400px;
+}
+
+.just-opa {
+    opacity: 0.4;
+}
+
+.main-info, .education, .experience, .skills, .interests {
+    width: 100%;
+    background-color: $base-color;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 430px) {
+    
+    .main-content {
+        margin: 6% 30px 6% 80px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .main-content {
+        margin: 6% 50px 6% 100px; 
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-content {
+        margin: 6% 100px 6% 150px; 
+    }
+
+    .scooched {
+        margin-right: 50px;
+        margin-left: 300px;
+    }
+
+    .main-info {
+        padding-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .main-content {
+        margin: 6% 150px 6% 200px; 
+    }
+
+    .scooched {
+        margin-left: 400px;
+    }
+
+}

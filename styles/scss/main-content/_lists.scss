@@ -1,0 +1,145 @@
+.education .main-list>li, .experience .main-list>li {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.education .main-list>li>h3, .experience .main-list>li>h3 {
+    flex: 1;
+    text-align: center;
+}
+
+.education .main-list>li>p, .experience .main-list>li>p {
+    flex: 3;
+    text-align: center;
+}
+
+.skills-list {
+    @extend %flex;
+    flex-wrap: wrap;
+    width: 85%;
+    padding: 30px 0;
+}
+
+.skills-list>li {
+    flex: 1;
+    flex-basis: 80px;
+    margin: 5px;
+}
+
+.skills-list>li>img {
+    object-fit: cover;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.langs-list>li {
+    @extend %flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.langs-list>li>img {
+    flex: 1;
+    width: 50px;
+    max-width: 100px;
+}
+
+.langs-list>li>p {
+    flex: 2;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+#langs {
+    padding-top: 0;
+}
+
+.interests li p {
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 430px) {
+
+    .skills-list>li {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .education .main-list>li, .experience .main-list>li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0;  
+        font-size: 1em;  
+    }
+
+    .langs-list>li>p, .interests li p {
+        font-size: 1em;
+    }
+
+    .education .main-list>li>h3, .experience .main-list>li>h3 {
+        text-align: right;
+    }
+
+    .education .main-list>li>p, .experience .main-list>li>p {
+        text-align: left;
+        padding-left: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-info, .education, .experience, .skills, .interests {
+        padding-top: 80px;
+    }
+
+    .education .main-list>li, .experience .main-list>li {
+        width: 100%;
+    }
+
+    .education .main-list>li>h3, .experience .main-list>li>h3 {
+        flex: 1;
+    }
+
+    .education .main-list>li>p, .experience .main-list>li>p {
+        flex: 4;
+    }
+
+    .skills-list {
+        padding: 70px 40px;
+    }
+
+    .langs-list>li {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .skills-list {
+        width: 70%;
+    }
+
+    .skills-list>li {
+        flex-basis: 180px;
+    }
+
+    .education .main-list>li, .experience .main-list>li {
+        width: 50%;
+    }
+
+    .skills-list>li>img {
+        min-height: 180px;
+        max-height: 180px;
+    }
+
+    .langs-list>li {
+        width: 35%;
+    }
+
+}

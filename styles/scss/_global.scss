@@ -1,0 +1,47 @@
+@import 'variables';
+
+body {
+    color: $accent-color;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $odd-color;
+    @extend %flex;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+
+
+
