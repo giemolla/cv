@@ -6,6 +6,10 @@
     cursor: pointer;
 }
 
+.non-clickable {
+    pointer-events: none;
+}
+
 #open-nav:focus {
     outline-color: transparent;
     outline-style: none;

@@ -464,6 +464,9 @@ h1 {
   padding: 0;
   cursor: pointer; }
 
+.non-clickable {
+  pointer-events: none; }
+
 #open-nav:focus {
   outline-color: transparent;
   outline-style: none; }
@@ -557,6 +560,9 @@ svg {
   color: #e9ece5;
   margin-bottom: 30px; }
 
+.name-header {
+  margin-top: 40px; }
+
 .goal-header {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -628,7 +634,8 @@ svg {
 
 @media screen and (max-width: 767px) {
   .goal-header {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    margin-top: 30px; }
 
   .goal-header:before, .goal-header:after, .my-data-header:before, .my-data-header:after {
     border-width: 20.8px; }
@@ -888,6 +895,9 @@ svg {
   background-color: #e9ece5;
   margin: 6% 25px 6% 50px; }
 
+.none-content {
+  display: none; }
+
 .scooched {
   opacity: 0.4;
   margin-left: 400px; }
@@ -922,5 +932,52 @@ svg {
 
   .scooched {
     margin-left: 400px; } }
+.letter {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  background-color: #3b3a36;
+  color: #e9ece5;
+  padding: 20px 70px 20px 20px; }
+
+.show {
+  display: block; }
+
+.letter-text {
+  background-color: #e9ece5;
+  color: #3b3a36;
+  padding: 10px 20px;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1em; }
+
+.letter-text a {
+  color: inherit;
+  font-weight: bold; }
+
+.fa-times {
+  cursor: pointer;
+  font-size: 1.5em; }
+
+@media screen and (min-width: 485px) {
+  .letter {
+    padding: 30px 100px 50px 50px; }
+
+  .letter-text {
+    padding: 20px 40px;
+    font-size: 1em;
+    line-height: 1.2em; } }
+@media screen and (min-width: 768px) {
+  .letter {
+    padding: 50px 150px 100px 100px; }
+
+  .letter-text {
+    padding: 40px 60px;
+    font-size: 1.1em;
+    line-height: 1.3em; } }
 
 /*# sourceMappingURL=style.css.map */

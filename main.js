@@ -29,6 +29,11 @@ $(document).ready(function(){
             $('.main-content').removeClass('just-opa')
         }
     };
+
+    var hideLetter = function() {
+        $('.letter').fadeOut(800);
+        $('.main-content').removeClass('none-content');
+    };
   
     $('#open-nav').on('click', toggleMenu);
 
@@ -40,10 +45,20 @@ $(document).ready(function(){
 
     $('.side-bar a').on('click', function() {
         hideMenu();
+        hideLetter();
+        if( $(this).hasClass('file') ) {
+            $('.main-content').toggleClass('none-content');
+            $('.letter').fadeToggle(800);
+            $('.fa-times').on('click', hideLetter);
+        }
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 1000);
         return false;
+    });
+
+    $('.fa-file').on('click', function() {
+        $('.letter').toggleClass('show');
     });
 
     $('.icon-wrapper').hover(function() {
